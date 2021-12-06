@@ -1,0 +1,118 @@
+ /* Start Grid System */
+ 
+ @media(max-width:576px) {
+     /* Small Devices => Landscape-phones*/
+     .container {
+         width: auto;
+     }
+     .landing-page .intro-text h1 {
+         font-size: 26px;
+     }
+     .features .feat-box {
+         width: 100%;
+     }
+ }
+ 
+ @media(min-width:768px) {
+     /* Medium Devices => Landscape-Tablets*/
+     .container {
+         width: auto;
+     }
+ }
+ 
+ @media(max-width:768px) {
+     .about-us {
+         text-align: center;
+         display: block;
+     }
+     .about-us .info-box {
+         padding: 0;
+     }
+     .our-skills .skill-box {
+         display: block;
+     }
+     .our-skills .skill-box .skill-name {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .timeline .timeline-content .left,
+     .timeline .timeline-content .right {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+     .timeline .timeline-content .left::before,
+     .timeline .timeline-content .right::before {
+         display: none;
+     }
+     .timeline .timeline-content .left .content:before,
+     .timeline .timeline-content .right .content:before {
+         display: none;
+     }
+     .testmonial h2 {
+         text-align: center;
+     }
+     .testmonial .ts-box {
+         width: 100%;
+         float: none;
+         margin-bottom: 15px;
+     }
+     .contact-us form .left,
+     .contact-us form .right {
+         float: none;
+         width: 100%;
+     }
+ }
+ 
+ @media(min-width:992px) {
+     /* middle Devices => Landscape-Desktop*/
+ }
+ 
+ @media(max-width:991px) {
+     .container {
+         width: auto;
+     }
+     .header-area .links {
+         display: none;
+     }
+     .header-area .menu-toggle {
+         display: inline-block;
+     }
+     .header-area .links.open {
+         background-color: #f2f2f2;
+         position: absolute;
+         padding: 10px;
+         display: block;
+         top: 50px;
+         left: 0;
+         width: 100%;
+         border-radius: 4px;
+         text-align: center;
+     }
+     .header-area .links.open li {
+         display: block;
+         margin: 10px;
+     }
+     .header-area .links.open li a {
+         color: var(--main--color);
+         font-weight: bold;
+     }
+     .features .feat-box {
+         width: calc(100% /2);
+     }
+     .testmonial .ts-box .person-info {
+         overflow: visible;
+         text-align: center;
+     }
+     .testmonial .ts-box .person-info img {
+         float: none;
+         margin-right: 0;
+     }
+ }
+ 
+ @media(min-width:1200px) {
+     /* large Devices => Landscape-big monitor*/
+     .container {
+         max-width: 1140px;
+     }
+ }
+ /* End Grid System */
